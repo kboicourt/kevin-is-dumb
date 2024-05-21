@@ -15,7 +15,29 @@
         width: 10rem;
         height: 5rem;
         margin: 4rem 2rem;
+        border-radius: 8px;
     }
+
+    .shadow-btn {
+        padding: 15px 30px;
+        font-size: 18px;
+        background-color: #228500; /* Example blue color */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 2px 4px 8px 0 gray; /* Initial shadow */
+        transition: box-shadow 0.3s ease; /* Smooth transition */
+    }
+
+    .shadow-btn:hover {
+        box-shadow: 2px 8px 16px 0 gray; /* Larger shadow on hover */
+    }
+
+    .shadow-btn:active {
+        box-shadow: 2px 2px 4px 0 gray; /* Smaller shadow when clicked */
+    }
+
 </style>
 
 <body>
@@ -24,7 +46,7 @@
 
     <div class="btn-container">
         <button disabled class="btn">YES</button>
-        <button class="btn">NO</button>
+        <button class="btn shadow-btn">NO</button>
     </div>
 </main>
 </body>
